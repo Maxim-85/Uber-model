@@ -399,77 +399,73 @@ nav
             transition: 0.3s all
             color: $text_pink
 
-footer
-    position: relative
-    padding: 11px 0 40px 0
-    .divider
-        position: relative
-        &::before
-            position: absolute
-            content: ''
-            display: block
-            width: 301px
-            height: 4px
-            top: 0
-            left: 50%
-            transform: translateX(-50%)
-            background: #1FBAD6
-    .footer_wrap
-        display: flex
-        margin-top: 30px
-        justify-content: space-around
-        /** flex-wrap: wrap **/
-        &_list            
-            font-weight: 300
-            font-size: 15px
-            line-height: 15px
-            align-items: center
-            text-transform: uppercase                         
-        &_link               
-            text-decoration: none
-            color: #070716
-            &:hover
-                transition: 0.3s all
-                color: $text_pink             
-        &_1
-            margin-top: 15px
-            justify-content: space-between    
-            &_list
-                font-size: 11px
-            &_link
-                color: #999999
-    a.footer_lang
-        display: block
-        margin-top: 17px
-        font-weight: normal
-        font-size: 11px
-        text-align: center
-        text-transform: uppercase
-        color: #1FBAD6
-        text-decoration: none
-        &:hover
-                transition: 0.3s all
-                color: $text_pink
-    .mobile_icon
-        position: absolute
-        display: flex
-        margin-left: 16px
-        top: 50px
-        &_round 
-            display: flex
-            margin-left: 9px
-            width: 32px
-            height: 32px
-            background: #070716
-            border-radius: 100%
-            justify-content: center
-            align-items: center
-            a 
-                &:hover
-                transition: 0.3s all
-                color: $text_pink
-    .app_link
-        position: absolute
-        top: 50px
-        right: 21px
+footer 
+	padding: 14px 23px 39px 23px
+	a
+        text-decoration: none 
+		&:hover 
+			opacity: 0.4
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%			
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
+    &_mobile > img
+            height: 27px
+            width: 94px
 
+        
